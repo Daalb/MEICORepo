@@ -1,0 +1,15 @@
+{
+    "Nombre": "Diego Albor Rojas",
+    "Edad": 23,
+    "Telefonos": [
+        {
+            "TipoTelefono": "Celular",
+            "NumeroTelefono": "3137085940"
+        },
+        {
+            "TipoTelefono": "Fijo",
+            "NumeroTelefono": "3070883"
+        }
+    ],
+    "Email": "diegoaalborrojas@gmail.com"
+}

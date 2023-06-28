@@ -1,0 +1,55 @@
+<div class="container contenedor mt-3">
+  <div class="row text-center">
+    <h1>Procesar JSON</h1>
+  </div>
+  <div class="row">
+
+    <div class="col">
+      <h3>
+        Ingresar JSON
+      </h3>
+      <span>Asegurese de cargar un JSON con la siguiente estructura:</span>
+      <pre>
+        <code>
+          {{jsonEjemplo | json}}
+        </code>
+      </pre>
+
+      <div class="mb-3">
+        <label for="formFile" class="form-label">Cargar Archivo:</label>
+        <input #cargaArchivo class="form-control" type="file" id="formFile" (change)="archivoCargado($event)">
+      </div>
+
+    </div>
+
+
+    <div class="col">
+      <h3>
+        JSON Procesado
+      </h3>
+      <span>Contenido del archivo cargado:</span>
+      <pre>
+        <code>
+          {{objetoProcesado | json}}
+        </code>
+      </pre>
+
+      <div *ngIf="objetoProcesado">
+        <ul>
+          <li>Nombre: {{objetoProcesado.Nombre}}</li>
+          <li>Edad: {{objetoProcesado.Edad}}</li>
+          <li>Telefonos:</li>
+          <ul>
+            <li *ngFor="let telefono of objetoProcesado.Telefonos"> Tipo: {{telefono.TipoTelefono}} - Numero: {{telefono.NumeroTelefono}}</li>
+          </ul>
+          <li>Email: {{objetoProcesado.Email}}</li>
+        </ul>
+      </div>
+
+
+      <button class="btn btn-primary" (click)="limpiar()">
+        Limpiar
+      </button>
+    </div>
+  </div>
+</div>

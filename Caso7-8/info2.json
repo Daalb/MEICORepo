@@ -1,0 +1,15 @@
+{
+    "Nombre": "Gabriela Monsalve Martinez",
+    "Edad": 23,
+    "Telefonos": [
+        {
+            "TipoTelefono": "Celular",
+            "NumeroTelefono": "3023382650"
+        },
+        {
+            "TipoTelefono": "Fijo",
+            "NumeroTelefono": "3070883"
+        }
+    ],
+    "Email": "gmmonsalve@gmail.com"
+}
